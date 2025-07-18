@@ -1,0 +1,166 @@
+/* src/components/HrPolicy.css */
+.hr-policy-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px var(--shadow-color);
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.hr-policy-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.policy-form-section {
+  margin-bottom: 50px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 30px;
+}
+
+.policy-form-section h3,
+.policy-list-section h3 {
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.policy-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for inputs */
+  gap: 20px;
+}
+
+.policy-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.policy-form label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--dark-gray);
+  font-size: 15px;
+}
+
+.policy-form input[type="text"],
+.policy-form textarea {
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.policy-form input::placeholder,
+.policy-form textarea::placeholder {
+  color: #a0a8ad;
+}
+
+.policy-form input:focus,
+.policy-form textarea:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.policy-submit-button {
+  grid-column: 1 / -1; /* Make button span across both columns */
+  background-color: var(--accent-color);
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  outline: none;
+}
+
+.policy-submit-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.policy-submit-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.no-policies-message {
+  text-align: center;
+  color: var(--dark-gray);
+  font-size: 1.1em;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.policy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  min-width: 600px;
+}
+
+.policy-table th,
+.policy-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.policy-table th {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.policy-table tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.policy-table tbody tr:hover {
+  background-color: #e6ffe6;
+  transition: background-color 0.2s ease;
+}
+
+.delete-policy {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+}
+
+.delete-policy:hover {
+  background-color: #c82333;
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .policy-form {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}

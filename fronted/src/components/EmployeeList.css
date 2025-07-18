@@ -1,0 +1,164 @@
+/* src/components/EmployeeList.css */
+
+.employee-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.edit-employee-form-section {
+    background-color: #e7f3ff; /* Light blue for edit form */
+    border: 1px solid #a8d5ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.edit-employee-form h3 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.edit-employee-form .form-group {
+    margin-bottom: 15px;
+}
+
+.edit-employee-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.edit-employee-form input[type="text"],
+.edit-employee-form input[type="number"],
+.edit-employee-form input[type="tel"],
+.edit-employee-form textarea {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.edit-employee-form .form-actions {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.update-button {
+    background-color: #28a745; /* Green for update */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 10px;
+}
+
+.update-button:hover {
+    background-color: #218838;
+}
+
+.cancel-button {
+    background-color: #6c757d; /* Gray for cancel */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+.no-employees-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.table-responsive {
+    overflow-x: auto; /* For small screens */
+}
+
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners apply to content */
+}
+
+.employee-table th,
+.employee-table td {
+    border: 1px solid #eee;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.employee-table thead th {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.employee-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.employee-table tbody tr:hover {
+    background-color: #e2f0ff; /* Light blue on hover */
+}
+
+.action-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}

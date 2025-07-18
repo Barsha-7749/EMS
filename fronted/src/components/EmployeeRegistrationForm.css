@@ -1,0 +1,86 @@
+/* src/components/EmployeeRegistrationForm.css */
+.registration-form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px var(--shadow-color);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.registration-form-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between form groups */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--dark-gray);
+  font-size: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a0a8ad;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.submit-button {
+  background-color: var(--accent-color); /* Green button */
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  outline: none;
+}
+
+.submit-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
